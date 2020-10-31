@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/cardView"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="8dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="fitXY"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/titulo"
+        style="@style/titulos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        tools:text="Planeta de los simios Redencion" />
+
+    <TextView
+        style="@style/titulos"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        android:text="@string/duracionLabel"
+        android:id="@+id/duracionLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/duracionValue"
+        style="@style/values"
+        app:layout_constraintTop_toBottomOf="@+id/duracionLabel"
+        tools:layout_editor_absoluteX="0dp"
+        tools:text="108 min"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        style="@style/titulos"
+        app:layout_constraintTop_toBottomOf="@+id/duracionValue"
+        android:text="@string/fecha_de_estreno"
+        android:id="@+id/fechaLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        style="@style/values"
+        app:layout_constraintTop_toBottomOf="@+id/fechaLabel"
+        tools:text="2020-08-06"
+        android:id="@+id/fechaValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        style="@style/titulos"
+        app:layout_constraintTop_toBottomOf="@+id/fechaValue"
+        android:text="@string/calificacionLabel"
+        android:id="@+id/calificacionLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        style="@style/values"
+        app:layout_constraintTop_toBottomOf="@+id/calificacionLabel"
+        tools:text="6.1"
+        android:id="@+id/calificacionValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        style="@style/titulos"
+        app:layout_constraintTop_toBottomOf="@+id/calificacionValue"
+        android:text="@string/generosLabel"
+        android:id="@+id/generosLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        style="@style/values"
+        app:layout_constraintTop_toBottomOf="@+id/generosLabel"
+        tools:text="Accion Crimen Drama Suspenso"
+        android:id="@+id/generosValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        style="@style/titulos"
+        app:layout_constraintTop_toBottomOf="@+id/generosValue"
+        android:text="@string/descriptionLabel"
+        android:id="@+id/descripcionLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        style="@style/values"
+        app:layout_constraintTop_toBottomOf="@+id/descripcionLabel"
+        tools:text="Lorem ipsum"
+        android:id="@+id/descripcionValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
